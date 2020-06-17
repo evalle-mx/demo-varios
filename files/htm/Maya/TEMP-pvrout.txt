@@ -1,0 +1,15 @@
+mayaApp.config(function ($locationProvider, $routeProvider) {
+    $routeProvider
+    .when('/', {
+      templateUrl: 'app/views/pv-viajes.html',
+        controller :function ($scope, $route, $rootScope, $routeParams, $compile, $location ) {
+          document.title = 'Todos nuestros Viajes';
+          console.log('ocultando menu..');
+          $('#deskmenu').hide();
+        }
+    })
+<<ROUTING>>
+    .otherwise({
+  redirectTo: '/'
+  });
+});

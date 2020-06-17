@@ -1,0 +1,25 @@
+					<!-- tabTour.{{idTour}}: {{tituloTour}} -->
+                    <div id="tabTour{{idTour}}" class="tab-pane fade{{active}}">
+                        
+                        <div class="col-lg-5">
+                        	<div class="texto-ctour">
+	                            <p class="titulo-viaje">{{tituloTour}}</p>
+						    	<p class="costo-viaje"> 
+	                                <span class="visible-md visible-lg">Precio por persona {{costoTour}} </span>
+	                                <span class="visible-xs visible-sm">Precio: {{costoTour}} p/p</span>
+	                            </p>
+						     	<p class="incluye-viaje"><b>Incluye</b>: </p>
+						     	<div class="incluye-viaje">
+						      		{{incluye}}
+						       		<p class="condiciones-viaje"></p>
+						    	</div>
+						    	<br>
+						      	<lab-citytour></lab-citytour> 
+						     </div> 	
+					      	<hr class="visible-xs visible-sm">
+                        </div>
+
+                        <div class="col-lg-6 mt-imgct">
+                            <img src="{{imgUrl}}" class="img-rounded">
+                        </div>
+                    </div><!-- //tabTour.{{idTour}} -->

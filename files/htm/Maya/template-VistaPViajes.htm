@@ -1,0 +1,44 @@
+					
+                        <!--{{idViaje}}: {{titulo}} -->
+                        <div id="pv-{{name}}" class="content-viaje">
+                             <div class="col-lg-6 mt-containerBox">
+                                <a href="{{linkEvento}}" title="{{titulo}}" target="_blank">
+                                    <div class="mt-text-box">
+                                            <strong>Dá Click para ver evento en Facebook</strong>
+                                        </div>
+                                    <img src="app/img/pv-{{name}}.jpg" class="img-thumbnail">
+                                </a>
+                                <hr class="visible-xs visible-sm">
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="titulo-viaje">{{titulo}}</p>
+                                <p class="fecha-viaje">{{fecha}}</p>
+                                <p class="costo-viaje"> 
+                                    <span class="visible-md visible-lg">Duración: {{duracion}} / Precio por persona ${{costo}} </span>
+                                    <span class="visible-xs visible-sm">{{duracion}}, Precio: ${{costo}} p/p</span>
+                                </p>
+                                <div class="descripc-viaje">           
+                                   {{descripcion}}
+                                </div>
+                                <br>
+                                <p class="incluye-viaje"><strong>Incluye</strong>: </p>
+                                     <div class="incluye-viaje">
+                                        {{incluye}}
+                                        <p class="condiciones-viaje">{{condiciones}}</p>
+                                     </div>
+                                <div class="salida-viaje">
+                                    <div class="visible-md visible-lg">
+                                        <strong>Salida:</strong> {{salida}}<br>
+                                        <strong>Regreso:</strong> {{regreso}}
+                                    </div>
+                                    <div class="visible-xs visible-sm">
+                                        <strong>Salida:</strong> {{salidaMv}} <br>
+                                        <strong>Regreso:</strong> {{regresoMv}}
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <br>
+                                    <a class="btn btn-primary btn-sm{{showDoc}}" href="/docs/{{promoPdf}}" target="_blank">Descargar <span class="fa fa-download"></span> </a>
+                                </div>
+                            </div>
+                        </div><!-- //div-{{idViaje}}-->

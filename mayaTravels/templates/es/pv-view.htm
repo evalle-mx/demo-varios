@@ -1,0 +1,96 @@
+<!-- ++++++++++++++++++  Contenido página {{name}}   ++++++++++++++++++ --> 
+        <div class="container boxcontainer">
+
+          <h1 class="mt-4 mb-3">
+            <small>{{titulo}}</small>
+          </h1>
+
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="home.html">Maya Travels</a>
+            </li>
+            <li class="breadcrumb-item"><a href="home.html#proximosv">Proximos viajes</a></li><!--proximos.html-->
+            <li class="breadcrumb-item active">{{titulo}}</li>
+          </ol>
+
+          
+          <div class="row">
+
+            <div class="col-md-6">
+				<div data-toggle="popover" data-trigger="hover" data-content="Dale click para ver el evento en Facebook." data-placement="right">
+					<a href="{{linkEvento}}" target="_blank">
+						<img class="img-fluid img-thumbnail" src="img/proximos/{{name}}-pv.jpg" alt="Dale click para ir al evento en Facebook"><!-- -->
+					</a>
+					<br>&nbsp;
+				</div>
+				<div class="alert alert-info">
+                    <p>
+						<span class="{{HIDESALIDA}}"><b>Salida:</b> {{salida}} <br></span>
+						<span class="{{HIDEREGRESO}}"><b>Regreso:</b> {{regreso}} <br></span>						
+					</p>
+                </div>
+                <div class="text-center hiddenMovil" style="padding-top: 1em;">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#mdPvReservar"><span class="fa fa-hand-pointer-o"></span> Quiero Ir!!!</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="pv-h3">{{titulo}}</h3>
+                
+                <div class="panel panel-default pv-include">
+					<div class="panel-heading">¿Cuándo y cúanto?</div>
+					<div class="panel-body">
+                    <p class="pv-p">
+						<i class="fa fa-calendar-check-o"></i> <b>Fecha: </b> {{fecha}}<br>
+						<i class="fa fa-money"></i> <b>Costo: </b>{{costo}} <span>por persona</span> 
+            <br><span class="{{HIDECONDS}}"><small>&nbsp;&nbsp;* {{condiciones}}</small></span><br>
+					</p>
+                  </div>
+                </div>
+                
+
+                <div class="panel panel-default pv-include">
+                   <div class="panel-heading">¿Qué haremos ahí?</div>
+                  <div class="panel-body">
+                      <p>
+                          {{HTMLDESCRIPCION}}                      
+                      </p>
+                  </div>
+                </div>
+                
+                <div class="panel panel-default pv-include">
+                  <div class="panel-heading">¿Qué incluye?</div>
+                  <div class="panel-body">
+                      <ul class="list-group" >
+                        <!--<li class="list-group-item"> <span class="fa fa-bus"></span> &nbsp;Transportación terrestre en autobuses o camionetas de turismo</li>-->
+                        {{INCLUYELISTA}}
+                      </ul>  
+                  </div>
+                </div>
+                
+                <div class="text-center hiddenScreen">                   
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#mdPvReservar"><span class="fa fa-hand-pointer-o"></span> Quiero Ir!!!</button>
+                </div>
+                
+            </div>
+
+          </div>
+          <hr>
+
+          <h3 class="my-4">Siguientes recorridos</h3>
+
+          <div class="row pv-siguiente" id="masonryContainer">
+		
+        		<div class="hiddenScreen">
+              <!-- Viajes Futuros Movil (2 grandes) -->
+{{VFSCREEN}}
+		        </div>
+
+            <div class="hiddenMovil">
+              <!-- Viajes Futuros Pantalla (4 pequeños) -->
+{{VFMOVIL}}
+		        </div>
+
+          </div>
+        </div>
+        <!-- ++++++++++++++++++  END Contenido página   ++++++++++++++++++ -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main"/>
+	<classpathentry kind="src" path="src/test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/CommonLang"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gson"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Log4j"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ApacheCollections"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/XmlBeans"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ApachePoi"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/iText"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Postgre9"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

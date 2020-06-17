@@ -1,0 +1,40 @@
+					
+					<!--{{idViaje}}: {{tituloViaje}} -->
+                    <div id="tabViaje{{idViaje}}" class="tab-pane fade {{active}} content-viaje">
+                         <div class="col-lg-6 mt-containerBox">
+                            <a href="{{linkEvento}}" title="{{tituloViaje}}" target="_blank">
+                                <div class="mt-text-box">
+                                        <b>Dá Click para ver evento en Facebook</b>
+                                    </div>
+                                <img src="{{imgUrl}}" class="img-thumbnail">
+                            </a>
+                            <hr class="visible-xs visible-sm">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="titulo-viaje">{{tituloViaje}}</p>
+                            <p class="fecha-viaje">{{fechaViaje}}</p>
+                            <p class="costo-viaje"> 
+                                <span class="visible-md visible-lg">Duración: {{duracionViaje}}. / Precio por persona {{costoViaje}} ** </span>
+                                <span class="visible-xs visible-sm">1 Día, Precio: {{costoViaje}}** p/p</span>
+                            </p>
+                            <div class="descripc-viaje">           
+                               {{descViaje}}
+                            </div>
+                            <br>
+                            <p class="incluye-viaje"><b>Incluye</b>: </p>
+                             <div class="incluye-viaje">
+                               {{incluye}}
+                              <p class="condiciones-viaje">**{{condiciones}}</p>
+                             </div>
+                            <div class="salida-viaje">
+                                <div class="visible-md visible-lg">
+                                    {{salida}}
+                                    {{regreso}}
+                                </div>
+                                <div class="visible-xs visible-sm">
+                                    {{salidaMv}}
+                                    {{regresoMv}}
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //tabViaje{{idViaje}} -->  

@@ -1,0 +1,18 @@
+                <!--{{idViaje}}: {{titulo}} -->
+                <div class="col-sm-3 text-center">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            {{titulo}}
+                        </div>
+                        <div class="panel-body">
+                            <a href="#/{{name}}">
+                                <img class="img-responsive img-rounded" src="app/img/pvm-{{name}}.jpg" title="{{titulo}}">
+                            </a>
+                        </div>
+                        <div class="panel-footer">                            
+                           <!--<b>$ {{costo}}</b><br> -->
+                           <b>$ {{costo}}</b> &nbsp;&nbsp;<i class="fa fa-{{ {{tipoTransporte}} | transp }}" aria-hidden="true"></i> <br>
+                           <i class="fa fa-calendar-check-o"></i> {{fecha}}
+                        </div>
+                    </div>
+                </div>

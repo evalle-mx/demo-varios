@@ -1,0 +1,67 @@
+<!-- ++++++++++++++++++  Contenido página {{name}}   ++++++++++++++++++ --> 
+        <div class="container boxcontainer">
+
+          <h1 class="mt-4 mb-3">
+            <small>{{titulo}}</small>
+          </h1>
+
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="home.html">Maya Travels</a>
+            </li>
+            <li class="breadcrumb-item"><a href="home.html#proximosv">Proximos viajes</a></li><!--proximos.html-->
+            <li class="breadcrumb-item active">{{titulo}}</li>
+          </ol>
+
+          
+          <div class="row">
+
+            <div class="col-md-6">
+                <a href="{{linkEvento}}" target="_blank">
+                    <img class="img-fluid" src="img/proximos/{{name}}-pv.jpg" alt="Dale click para ir al evento en Facebook"><!-- -->
+                </a>
+                <br>
+                <div class="text-center" style="padding-top: 1em;">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#mdPvReservar"><span class="fa fa-hand-pointer-o"></span> Quiero Ir!!!</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!--<h3 class="pv-h3">{{titulo}}</h3>-->
+                <p class="pv-p">
+                    <i class="fa fa-calendar-check-o"></i> <b>Fecha: </b> {{fecha}}<br>
+                    <i class="fa fa-money"></i> <b>Costo: </b>{{costo}} <span>por persona</span> <span class="{{HIDECONDS}}"><b>*</b></span><br>
+                </p>
+                <p>
+                    {{HTMLDESCRIPCION}}
+                </p>
+                <h4 class="pv-h4">Incluye</h4>
+                <ul class="pv-ul">{{INCLUYELISTA}}
+                </ul>
+
+                <p>
+                    <span class="{{HIDESALIDA}}"><b>Salida:</b> {{salida}} <br></span>
+                    <span class="{{HIDEREGRESO}}"><b>Regreso:</b> {{regreso}} <br></span>
+                    <div class="pv-cond {{HIDECONDS}}"> * {{condiciones}} </div>
+                </p>
+            </div>
+
+          </div>
+
+          <h3 class="my-4">Siguientes recorridos</h3>
+
+          <div class="row pv-siguiente" id="masonryContainer">
+		
+        		<div class="hiddenScreen">
+              <!-- Viajes Futuros Movil (2 grandes) -->
+{{VFSCREEN}}
+		        </div>
+
+            <div class="hiddenMovil">
+              <!-- Viajes Futuros Pantalla (4 pequeños) -->
+{{VFMOVIL}}
+		        </div>
+
+          </div>
+        </div>
+        <!-- ++++++++++++++++++  END Contenido página   ++++++++++++++++++ -->
